@@ -1,0 +1,30 @@
+第三章 处理数据
+
+C++变量的命名规则
+
+C++内置的整型--unsigned long、long、unsigned int、int、unsigned short、
+short、char、unsigned char、signed char 和 bool。
+
+C++11新增的整型：unsigned long long 和 longlong.
+表示各种整型的系统限制的climits文件
+各种整型的数字字面值（常量）
+使用const限定符来创建符号常量
+C++内置的浮点类型：float、double和long double
+表示各种浮点类型的系统限制的cfloat文件
+各种浮点类型的数字字面值
+C++的算术运算符
+自动类型转换
+强制类型转换
+
+
+在名称中只能使用字母字符、数字和下划线（_）。
+名称的第一个字符不能是数字。
+区分大写字符与小写字符。不能将C++关键字用作名称。
+
+以两个下划线或下划线和大写字母打头的名称被保留给实现（编译器及其使用的资源）使用。
+以一个下划线开头的名称被保留给实现，用作全局标识符。
+
+C++基本整型（char、short、int、long和C++11新增的long long），其中每种类型
+都有符号版本和无符号版本。
+
+实际上，short是short int的简称，而long是long int的简称，但是程序设计者们几乎都不使用比较长的形式。
