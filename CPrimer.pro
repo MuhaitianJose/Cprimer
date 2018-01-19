@@ -5,11 +5,16 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     ChapterTwo/firstsource.cpp \
-    ChapterThree/ChapterThreeCpp.cpp
+    ChapterThree/ChapterThreeCpp.cpp \
+    ChapterThree/chapterthreeexercises.cpp \
+    ChapterFour/chapterfourcontentcode.cpp
 
 HEADERS += \
     ChapterTwo/firstsource.h \
-    ChapterThree/chapterthreecpp.h
+    ChapterThree/chapterthreecpp.h \
+    ChapterThree/chapterthreeexercises.h \
+    ChapterFour/chapterfourcontentcode.h
 
 DISTFILES += \
-    ChapterThree/Recode.txt
+    ChapterThree/Recode.txt \
+    ChapterFour/Record.txt

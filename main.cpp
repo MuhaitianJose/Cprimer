@@ -1,6 +1,8 @@
 #include <iostream>
 #include "ChapterTwo/firstsource.h"
 #include "ChapterThree/chapterthreecpp.h"
+#include "ChapterThree/chapterthreeexercises.h"
+#include "ChapterFour/chapterfourcontentcode.h"
 
 using namespace std;
 
@@ -11,22 +13,35 @@ using namespace std;
  */
 int main()
 {
-//第二章
-//    FirstSource* mSource = new FirstSource();
-//    mSource->exercisesOne();
-//    mSource->exercisesTwo();
-//    mSource->exercisesThree();
-//    mSource->exercisesFour();
-//    mSource->exercisesFive();
-//    mSource->exercisesSix();
-//    mSource->exercisesSeven();
-//    cin.get();
-    ChapterThreeCpp* mThree = new ChapterThreeCpp();
-//    mThree->testLimits();
-//    mThree->exceed();
-//    mThree->hexoct2();
-//    mThree->chartype();
-        mThree->morechar();
+    //第二章
+    //    FirstSource* mSource = new FirstSource();
+    //    mSource->exercisesOne();
+    //    mSource->exercisesTwo();
+    //    mSource->exercisesThree();
+    //    mSource->exercisesFour();
+    //    mSource->exercisesFive();
+    //    mSource->exercisesSix();
+    //    mSource->exercisesSeven();
+    //    cin.get();
+    //第三章
+    //    ChapterThreeCpp* mThree = new ChapterThreeCpp();
+    //    mThree->testLimits();
+    //    mThree->exceed();
+    //    mThree->hexoct2();
+    //    mThree->chartype();
+    //    mThree->morechar();
+    //    cout.put('$');
+    //第四章
+    ChapterThreeExercises* mExercises = new ChapterThreeExercises();
+//    mExercises->exercisesOne();
+//    mExercises->exercisesTwo();
+//    mExercises->exercisesThreee();
+//        mExercises->exercisesFour();
+//    mExercises->exercisesFive();
+    ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
+//    mFourContentCode->arrayone();
+    mFourContentCode->strings();
+
     return 0;
 }
 

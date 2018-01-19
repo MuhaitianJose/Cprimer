@@ -28,3 +28,11 @@ C++基本整型（char、short、int、long和C++11新增的long long），其�
 都有符号版本和无符号版本。
 
 实际上，short是short int的简称，而long是long int的简称，但是程序设计者们几乎都不使用比较长的形式。
+
+当运算涉及两种类型时，较小的类型将被转换为较大的类型。
+
+简单地说:
+有符号整型按级别从高到低依次为longlong、long、int、short和signed char。
+无符号整型的排列顺序与有符号整型相同。
+类型char、signed char和unsigned char的级别相同。
+类型bool的级别最低。wchar_t、char16_t和char32_t的级别与其底层类型相同。
