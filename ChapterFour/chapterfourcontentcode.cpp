@@ -6,7 +6,12 @@ using namespace std;
 
 ChapterFourContentCode::ChapterFourContentCode()
 {
+    guest = {
+        "muhiatian",
+        1.88,
+        29.99
 
+    };
 }
 
 void ChapterFourContentCode::arrayone(){
@@ -51,8 +56,13 @@ void ChapterFourContentCode::strings(){
     cout <<name2<<endl;
 
 
-
-
-
-
 }
+
+void ChapterFourContentCode::printStruct(){
+    cout << guest.name;
+    cout << guest.volum;
+    cout << guest.price;
+}
+
+
+
