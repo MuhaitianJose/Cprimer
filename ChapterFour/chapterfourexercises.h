@@ -12,10 +12,31 @@ struct People{
     int age;
 };
 
+struct CandyBar{
+    string brand;
+    float weight;
+    int calories;
+};
+
+struct Pizza{
+    string pizza_company_name;
+    float diameter;
+    float weight;
+};
+
 class ChapterFourExercises
 {
 public:
     ChapterFourExercises();
+    People* people;
+
+    void exercisesOne();
+    ~ChapterFourExercises();
+    void exercisesTwo();
+    void exercisesThree();
+    void exercisesFour();
+    void exercisesFive();
+    void exercisesSix();
 };
 
 #endif // CHAPTERFOUREXERCISES_H

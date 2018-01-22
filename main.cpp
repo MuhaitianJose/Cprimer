@@ -3,6 +3,7 @@
 #include "ChapterThree/chapterthreecpp.h"
 #include "ChapterThree/chapterthreeexercises.h"
 #include "ChapterFour/chapterfourcontentcode.h"
+#include "ChapterFour/chapterfourexercises.h"
 
 using namespace std;
 
@@ -32,18 +33,25 @@ int main()
     //    mThree->morechar();
     //    cout.put('$');
     //第四章
-    ChapterThreeExercises* mExercises = new ChapterThreeExercises();
+//    ChapterThreeExercises* mExercises = new ChapterThreeExercises();
 //    mExercises->exercisesOne();
 //    mExercises->exercisesTwo();
 //    mExercises->exercisesThreee();
 //        mExercises->exercisesFour();
 //    mExercises->exercisesFive();
-    ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
+//    ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
 //    mFourContentCode->arrayone();
 //    mFourContentCode->strings();
 //    mFourContentCode->printStruct();
 //    mFourContentCode->useUnion();
-    mFourContentCode->showAddress();
+//    mFourContentCode->showAddress();
+    ChapterFourExercises* mFourExercises = new ChapterFourExercises();
+//    mFourExercises->exercisesOne();
+//        mFourExercises->exercisesTwo();
+//        mFourExercises->exercisesThree();
+//    mFourExercises->exercisesFour();
+//    mFourExercises->exercisesFive();
+        mFourExercises->exercisesSix();
 
     return 0;
 }

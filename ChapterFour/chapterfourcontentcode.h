@@ -53,6 +53,7 @@ public:
     void printStruct();
     void useUnion();
     void showAddress();
+    void showVector();
 };
 
 #endif // CHAPTERFOURCONTENTCODE_H
