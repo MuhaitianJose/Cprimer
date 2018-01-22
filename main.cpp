@@ -40,7 +40,10 @@ int main()
 //    mExercises->exercisesFive();
     ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
 //    mFourContentCode->arrayone();
-    mFourContentCode->strings();
+//    mFourContentCode->strings();
+//    mFourContentCode->printStruct();
+//    mFourContentCode->useUnion();
+    mFourContentCode->showAddress();
 
     return 0;
 }

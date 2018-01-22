@@ -1,18 +1,23 @@
 #include "chapterfourcontentcode.h"
 #include <iostream>
 #include <cstring>
+#include <vector>
 
 using namespace std;
 
 ChapterFourContentCode::ChapterFourContentCode()
 {
+
     guest = {
         "muhiatian",
         1.88,
         29.99
 
     };
+
 }
+
+
 
 void ChapterFourContentCode::arrayone(){
     int yams[3];
@@ -59,9 +64,44 @@ void ChapterFourContentCode::strings(){
 }
 
 void ChapterFourContentCode::printStruct(){
-    cout << guest.name;
-    cout << guest.volum;
-    cout << guest.price;
+    cout <<"name:" << guest.name << endl;
+    cout <<"volum:" << guest.volum << endl;
+    cout <<"price:"<< guest.price <<endl;
+}
+
+void ChapterFourContentCode::useUnion(){
+
+    product.id_val.id_int = 45;
+
+    cout << "widget.id_val.id_int:"<<product.id_val.id_int<<endl;
+    cout << "widget.id_val.id_double:"<<product.id_val.id_double;
+
+}
+
+void ChapterFourContentCode::showAddress(){
+    int douts = 56;
+    double mk = 89;
+    double *cups = &mk;
+    int* pn = new int;
+    *pn = 56;
+
+
+    cout << "douts value=" << douts;
+    cout << " and douts address=" << &douts << endl;
+
+    cout << "mk value=" << *cups;
+    cout << " mk address value = " <<cups <<endl;
+
+    cout << "*cups value=" << *cups;
+    cout << " cups value = " <<cups <<endl;
+
+    char flower[10] = "rose";
+    cout << flower <<"s are red" <<endl;
+}
+
+void ChapterFourContentCode::showVector(){
+    vector <int> mk;
+
 }
 
 
