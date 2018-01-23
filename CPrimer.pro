@@ -9,7 +9,8 @@ SOURCES += main.cpp \
     ChapterThree/chapterthreeexercises.cpp \
     ChapterFour/chapterfourcontentcode.cpp \
     ChapterFour/chapterfourexercises.cpp \
-    ChapterFive/chapterfivecontentcode.cpp
+    ChapterFive/chapterfivecontentcode.cpp \
+    ChapterFive/chapterfiveexercises.cpp
 
 HEADERS += \
     ChapterTwo/firstsource.h \
@@ -17,7 +18,8 @@ HEADERS += \
     ChapterThree/chapterthreeexercises.h \
     ChapterFour/chapterfourcontentcode.h \
     ChapterFour/chapterfourexercises.h \
-    ChapterFive/chapterfivecontentcode.h
+    ChapterFive/chapterfivecontentcode.h \
+    ChapterFive/chapterfiveexercises.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \

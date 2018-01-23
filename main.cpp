@@ -5,6 +5,7 @@
 #include "ChapterFour/chapterfourcontentcode.h"
 #include "ChapterFour/chapterfourexercises.h"
 #include "ChapterFive/chapterfivecontentcode.h"
+#include "ChapterFive/chapterfiveexercises.h"
 
 using namespace std;
 
@@ -58,19 +59,27 @@ int main()
     //    mFourExercises->exercisesNine();
     //第五章
 
-    ChapterFiveContentCode* mFiveContentCode = new ChapterFiveContentCode();
+    //    ChapterFiveContentCode* mFiveContentCode = new ChapterFiveContentCode();
 
     //    mFiveContentCode->forMore()
     //    mFiveContentCode->bigStep();
     //    mFiveContentCode->forstr1();
     //    mFiveContentCode->plus_one();
     //    mFiveContentCode->compstr1();
-//    mFiveContentCode->compstr2();
-//    mFiveContentCode->waiting();
-//    mFiveContentCode->textinl();
-//    mFiveContentCode->textin2();
-//    mFiveContentCode->textin3();
-    mFiveContentCode->nested();
+    //    mFiveContentCode->compstr2();
+    //    mFiveContentCode->waiting();
+    //    mFiveContentCode->textinl();
+    //    mFiveContentCode->textin2();
+    //    mFiveContentCode->textin3();
+    //    mFiveContentCode->nested();
+
+    ChapterFiveExercises* mFiveExercises = new ChapterFiveExercises();
+    //    mFiveExercises->exercisesOne();
+//    mFiveExercises->exercisesTwo();
+//    mFiveExercises->exercisesThree();
+//    mFiveExercises->exercisesFour();
+//    mFiveExercises->exercisesFive();
+    mFiveExercises->exercisesSeven();
 
     return 0;
 }
