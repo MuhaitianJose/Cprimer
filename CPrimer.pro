@@ -8,14 +8,16 @@ SOURCES += main.cpp \
     ChapterThree/ChapterThreeCpp.cpp \
     ChapterThree/chapterthreeexercises.cpp \
     ChapterFour/chapterfourcontentcode.cpp \
-    ChapterFour/chapterfourexercises.cpp
+    ChapterFour/chapterfourexercises.cpp \
+    ChapterFive/chapterfivecontentcode.cpp
 
 HEADERS += \
     ChapterTwo/firstsource.h \
     ChapterThree/chapterthreecpp.h \
     ChapterThree/chapterthreeexercises.h \
     ChapterFour/chapterfourcontentcode.h \
-    ChapterFour/chapterfourexercises.h
+    ChapterFour/chapterfourexercises.h \
+    ChapterFive/chapterfivecontentcode.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \

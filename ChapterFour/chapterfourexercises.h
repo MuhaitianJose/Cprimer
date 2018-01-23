@@ -37,6 +37,10 @@ public:
     void exercisesFour();
     void exercisesFive();
     void exercisesSix();
+    void exercisesSeven();
+
+    void exercisesEight();
+    void exercisesNine();
 };
 
 #endif // CHAPTERFOUREXERCISES_H

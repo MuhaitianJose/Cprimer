@@ -1,6 +1,8 @@
 #include "chapterfourexercises.h"
 #include <iostream>
 #include <cstring>
+#include <array>
+
 using namespace std;
 
 
@@ -89,6 +91,60 @@ void ChapterFourExercises::exercisesSix(){
     cout << "pizza company name: " << mPizza.pizza_company_name << endl
          << "diameter: " << mPizza.diameter << endl
          << "weight: " << mPizza.weight << endl;
+}
+
+void ChapterFourExercises::exercisesSeven(){
+    Pizza* mPizza = new Pizza;
+
+    cout << "Enter diameter: ";
+    cin >> mPizza->diameter;
+
+    //使用getline会导致跳过输入这步。
+    cout << "Enter company name: ";
+    cin>>mPizza->pizza_company_name;
+
+    cout << "Enter weight: ";
+    cin >> mPizza->weight;
+
+    cout <<endl;
+    cout <<endl;
+    cout << "pizza company name: " << mPizza->pizza_company_name << endl
+         << "diameter: " << mPizza->diameter << endl
+         << "weight: " << mPizza->weight << endl;
+
+    delete mPizza;
+}
+
+void ChapterFourExercises::exercisesEight(){
+    Pizza* mPizza = new Pizza[3];
+    mPizza[0] = {"Muhai_00",12.6,36};
+    mPizza[1] = {"Muhai_01",12.7,37};
+    mPizza[2] = {"Muhai_02",12.8,38};
+
+    for(int i=0; i<3;i++){
+        cout << "company_name: " << mPizza[i].pizza_company_name << endl
+             << "diameter:" << mPizza[i].diameter << endl
+             << "weight: " << mPizza[i].weight << endl
+             << "-------------------------------------------"
+             << endl;
+    }
+
+    delete[] mPizza;
+
+}
+
+void ChapterFourExercises::exercisesNine(){
+    array<int,3> mk;
+    int total = 0;
+    for(int i=0;i<3;i++){
+        cout << "Enter your results: ";
+        cin >> mk.at(i);
+        total+=mk.at(i);
+    }
+
+    cout << "number : " << mk.size() <<endl;
+    cout << "The average scores: " <<total*1.0f/mk.size();
+
 }
 
 ChapterFourExercises::~ChapterFourExercises(){

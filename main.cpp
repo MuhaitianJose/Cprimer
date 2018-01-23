@@ -4,6 +4,7 @@
 #include "ChapterThree/chapterthreeexercises.h"
 #include "ChapterFour/chapterfourcontentcode.h"
 #include "ChapterFour/chapterfourexercises.h"
+#include "ChapterFive/chapterfivecontentcode.h"
 
 using namespace std;
 
@@ -33,25 +34,43 @@ int main()
     //    mThree->morechar();
     //    cout.put('$');
     //第四章
-//    ChapterThreeExercises* mExercises = new ChapterThreeExercises();
-//    mExercises->exercisesOne();
-//    mExercises->exercisesTwo();
-//    mExercises->exercisesThreee();
-//        mExercises->exercisesFour();
-//    mExercises->exercisesFive();
-//    ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
-//    mFourContentCode->arrayone();
-//    mFourContentCode->strings();
-//    mFourContentCode->printStruct();
-//    mFourContentCode->useUnion();
-//    mFourContentCode->showAddress();
-    ChapterFourExercises* mFourExercises = new ChapterFourExercises();
-//    mFourExercises->exercisesOne();
-//        mFourExercises->exercisesTwo();
-//        mFourExercises->exercisesThree();
-//    mFourExercises->exercisesFour();
-//    mFourExercises->exercisesFive();
-        mFourExercises->exercisesSix();
+    //    ChapterThreeExercises* mExercises = new ChapterThreeExercises();
+    //    mExercises->exercisesOne();
+    //    mExercises->exercisesTwo();
+    //    mExercises->exercisesThreee();
+    //    mExercises->exercisesFour();
+    //    mExercises->exercisesFive();
+    //    ChapterFourContentCode* mFourContentCode = new ChapterFourContentCode();
+    //    mFourContentCode->arrayone();
+    //    mFourContentCode->strings();
+    //    mFourContentCode->printStruct();
+    //    mFourContentCode->useUnion();
+    //    mFourContentCode->showAddress();
+    //ChapterFourExercises* mFourExercises = new ChapterFourExercises();
+    //    mFourExercises->exercisesOne();
+    //    mFourExercises->exercisesTwo();
+    //    mFourExercises->exercisesThree();
+    //    mFourExercises->exercisesFour();
+    //    mFourExercises->exercisesFive();
+    //    mFourExercises->exercisesSix();
+    //    mFourExercises->exercisesSeven();
+    //    mFourExercises->exercisesEight();
+    //    mFourExercises->exercisesNine();
+    //第五章
+
+    ChapterFiveContentCode* mFiveContentCode = new ChapterFiveContentCode();
+
+    //    mFiveContentCode->forMore()
+    //    mFiveContentCode->bigStep();
+    //    mFiveContentCode->forstr1();
+    //    mFiveContentCode->plus_one();
+    //    mFiveContentCode->compstr1();
+//    mFiveContentCode->compstr2();
+//    mFiveContentCode->waiting();
+//    mFiveContentCode->textinl();
+//    mFiveContentCode->textin2();
+//    mFiveContentCode->textin3();
+    mFiveContentCode->nested();
 
     return 0;
 }
