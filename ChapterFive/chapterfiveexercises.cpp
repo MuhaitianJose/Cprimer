@@ -1,6 +1,7 @@
 #include "chapterfiveexercises.h"
 #include <iostream>
 #include <array>
+#include <cstring>
 
 using namespace std;
 
@@ -123,5 +124,51 @@ void ChapterFiveExercises::exercisesSeven(){
     for(int i=0;i<number;i++){
 
         cout << manyCarInfo[i].producers << " "<< manyCarInfo[i].year << endl;
+    }
+}
+
+void ChapterFiveExercises::exercisesEight(){
+    char word[40];
+    int counts=0;
+    cout << "Enter words (to stop, type the word done): ";
+    cin >> word;
+    while(strcmp(word,"done")){
+        counts++;
+        cin >> word;
+    }
+
+    cout << "word = " << word <<endl;
+    cout << "You entered a total of " << counts << " words" <<endl;
+
+}
+
+void ChapterFiveExercises::exercisesNine(){
+    string word;
+    int counts=0;
+    cout << "Enter words (to stop, type the word done): ";
+    cin >> word;
+    while(word!="done"){
+        counts++;
+        cin >> word;
+    }
+
+    cout << "word = " << word <<endl;
+    cout << "You entered a total of " << counts << " words" <<endl;
+}
+
+void ChapterFiveExercises::exercisesTen(){
+    int rows = 0;
+
+    cout << "Enter number of rows: " ;
+    cin >> rows;
+    for(int x=0;x<rows;x++){
+        for(int y=0;y<rows;y++){
+            if(y< rows-x-1){
+               cout << ". ";
+            }else {
+                cout << "* ";
+            }
+        }
+        cout << endl;
     }
 }

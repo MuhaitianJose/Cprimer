@@ -20,6 +20,9 @@ public:
     void exercisesFive();
     void exercisesSix();
     void exercisesSeven();
+    void exercisesEight();
+    void exercisesNine();
+    void exercisesTen();
 };
 
 #endif // CHAPTERFIVEEXERCISES_H

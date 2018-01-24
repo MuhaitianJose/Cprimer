@@ -6,6 +6,7 @@
 #include "ChapterFour/chapterfourexercises.h"
 #include "ChapterFive/chapterfivecontentcode.h"
 #include "ChapterFive/chapterfiveexercises.h"
+#include "ChapterSix/chaptersixcontentcode.h"
 
 using namespace std;
 
@@ -73,13 +74,25 @@ int main()
     //    mFiveContentCode->textin3();
     //    mFiveContentCode->nested();
 
-    ChapterFiveExercises* mFiveExercises = new ChapterFiveExercises();
+    //    ChapterFiveExercises* mFiveExercises = new ChapterFiveExercises();
     //    mFiveExercises->exercisesOne();
-//    mFiveExercises->exercisesTwo();
-//    mFiveExercises->exercisesThree();
-//    mFiveExercises->exercisesFour();
-//    mFiveExercises->exercisesFive();
-    mFiveExercises->exercisesSeven();
+    //    mFiveExercises->exercisesTwo();
+    //    mFiveExercises->exercisesThree();
+    //    mFiveExercises->exercisesFour();
+    //    mFiveExercises->exercisesFive();
+    //    mFiveExercises->exercisesSeven();
+    //    mFiveExercises->exercisesNine();
+    //    mFiveExercises->exercisesTen();
+
+    //第六章
+    ChapterSixContentCode* mSixContentCode = new ChapterSixContentCode();
+    //    mSixContentCode->ifExample();
+    //    mSixContentCode->ifElseExample();
+    //    mSixContentCode->ifelseifExample();
+//    mSixContentCode->cctypes();
+//    mSixContentCode->condit();
+//    mSixContentCode->useSwitch();
+    mSixContentCode->useEnum();
 
     return 0;
 }
