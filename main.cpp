@@ -7,6 +7,8 @@
 #include "ChapterFive/chapterfivecontentcode.h"
 #include "ChapterFive/chapterfiveexercises.h"
 #include "ChapterSix/chaptersixcontentcode.h"
+#include "ChapterSix/chaptersixexercises.h"
+#include <cctype>
 
 using namespace std;
 
@@ -85,14 +87,23 @@ int main()
     //    mFiveExercises->exercisesTen();
 
     //第六章
-    ChapterSixContentCode* mSixContentCode = new ChapterSixContentCode();
+//    ChapterSixContentCode* mSixContentCode = new ChapterSixContentCode();
     //    mSixContentCode->ifExample();
     //    mSixContentCode->ifElseExample();
     //    mSixContentCode->ifelseifExample();
-//    mSixContentCode->cctypes();
-//    mSixContentCode->condit();
-//    mSixContentCode->useSwitch();
-    mSixContentCode->useEnum();
+    //    mSixContentCode->cctypes();
+    //    mSixContentCode->condit();
+    //    mSixContentCode->useSwitch();
+//    mSixContentCode->useEnum();
+    ChapterSixExercises* mSixExercises = new ChapterSixExercises();
+//    mSixExercises->exercisesOne();
+//    mSixExercises->exercisesOne();
+//    mSixExercises->exercisesTwo();
+//    mSixExercises->exercisesThree();
+//      mSixExercises->exercisesFour();
+//    mSixExercises->exercisesFive();
+//    mSixExercises->exercisesSix();
+    mSixExercises->exercisesSeven();
 
     return 0;
 }
