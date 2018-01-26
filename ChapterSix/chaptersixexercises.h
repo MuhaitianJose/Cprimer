@@ -29,6 +29,8 @@ public:
     void exercisesFive();
     void exercisesSix();
     void exercisesSeven();
+    void exercisesEighth();
+    void exercisesNine();
 private:
     void showMenu();
     void showMenuFour();

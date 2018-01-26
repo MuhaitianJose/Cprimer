@@ -3,6 +3,8 @@
 #include <cctype>
 #include <array>
 #include <cstring>
+#include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -244,4 +246,34 @@ void ChapterSixExercises::exercisesSeven(){
     cout << vowels << " words beginning with vowels" << endl;
     cout << consonants << " words beginning with consonants" << endl;
     cout << other << " others" << endl;
+}
+void ChapterSixExercises::exercisesEighth(){
+    char ch;
+    int sum;
+    ifstream inFile;
+    inFile.open("eight.txt");
+    if(!inFile.is_open()){
+        cout << "Could not open the file. " << endl;
+        cout << "Program terminating. " << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    cin >> ch;
+    while (inFile.good()) {
+        ++sum;
+        inFile >> ch;
+    }
+    if(inFile.eof()){
+        cout << "End of file reached." << endl;
+    }else if (inFile.fail()) {
+        cout << "Input terminated for by data mismatch." << endl;
+    }else {
+        cout << "Input terminated for for unkonwn reason." << endl;
+    }
+
+    cout << "Total " << sum << " char in this file."<< endl;
+}
+
+void ChapterSixExercises::exercisesNine(){
+
 }

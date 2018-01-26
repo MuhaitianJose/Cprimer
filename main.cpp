@@ -103,12 +103,9 @@ int main()
 //      mSixExercises->exercisesFour();
 //    mSixExercises->exercisesFive();
 //    mSixExercises->exercisesSix();
-    mSixExercises->exercisesSeven();
+//    mSixExercises->exercisesSeven();
+      mSixExercises->exercisesEighth();
 
     return 0;
 }
 
-/**
- *cout的对象属性包括一个插入运算符(<<),它可以将其右侧的信息插入到流中。
- *
- **/
