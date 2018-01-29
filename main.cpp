@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cctype>
+#include <array>
 #include "ChapterTwo/firstsource.h"
 #include "ChapterThree/chapterthreecpp.h"
 #include "ChapterThree/chapterthreeexercises.h"
@@ -8,7 +10,8 @@
 #include "ChapterFive/chapterfiveexercises.h"
 #include "ChapterSix/chaptersixcontentcode.h"
 #include "ChapterSix/chaptersixexercises.h"
-#include <cctype>
+#include "ChapterSeven/chaptersevencontentcode.h"
+
 
 using namespace std;
 
@@ -87,25 +90,59 @@ int main()
     //    mFiveExercises->exercisesTen();
 
     //第六章
-//    ChapterSixContentCode* mSixContentCode = new ChapterSixContentCode();
+    //    ChapterSixContentCode* mSixContentCode = new ChapterSixContentCode();
     //    mSixContentCode->ifExample();
     //    mSixContentCode->ifElseExample();
     //    mSixContentCode->ifelseifExample();
     //    mSixContentCode->cctypes();
     //    mSixContentCode->condit();
     //    mSixContentCode->useSwitch();
-//    mSixContentCode->useEnum();
-    ChapterSixExercises* mSixExercises = new ChapterSixExercises();
-//    mSixExercises->exercisesOne();
-//    mSixExercises->exercisesOne();
-//    mSixExercises->exercisesTwo();
-//    mSixExercises->exercisesThree();
-//      mSixExercises->exercisesFour();
-//    mSixExercises->exercisesFive();
-//    mSixExercises->exercisesSix();
-//    mSixExercises->exercisesSeven();
-      mSixExercises->exercisesEighth();
+    //    mSixContentCode->useEnum();
+    //    ChapterSixExercises* mSixExercises = new ChapterSixExercises();
+    //    mSixExercises->exercisesOne();
+    //    mSixExercises->exercisesOne();
+    //    mSixExercises->exercisesTwo();
+    //    mSixExercises->exercisesThree();
+    //    mSixExercises->exercisesFour();
+    //    mSixExercises->exercisesFive();
+    //    mSixExercises->exercisesSix();
+    //    mSixExercises->exercisesSeven();
+    //    mSixExercises->exercisesEighth();
+    //第七章
+//    const int Asize = 8;
+//    int cookies[Asize] = {1,2,4,8,16,32,64,128};
+    ChapterSevenContentCode* mSevenContentCode = new ChapterSevenContentCode();
+    //    int total = mSevenContentCode->sum_arr(cookies,Asize);
+    //    cout << "Total cookies eaten: "<< total << endl;
+    //    mSevenContentCode->show_array(cookies,Asize);
+    //    cout << "sum_arr_by_pointer: "<<mSevenContentCode->sum_arr_by_pointer(cookies,cookies+Asize);
+    //    mSevenContentCode->array_2d();
+//    char mmm[15] = "minimum";
+//    char* wail = "ululate";
+//    unsigned int ms = mSevenContentCode->c_in_str(mmm,'m');
+//    unsigned int us = mSevenContentCode->c_in_str(wail,'u');
+//    cout << "ms=" << ms << " "<< "us=" <<us;
 
+//    char* mk = mSevenContentCode->buildstr('M',50);
+//    cout << mk;
+//    delete[] mk;
+
+//    travel_time day1 = {5,45};
+//    travel_time day2 = {4,55};
+//    travel_time trip = mSevenContentCode->travel_time_sum(day1,day2);
+//    mSevenContentCode->show_time(trip);
+//    const int SIZE = 5;
+//    string list[SIZE];
+//    cout << "Enter your "<< SIZE << "favorite astronomical:" << endl;
+//    for(int i=0;i<SIZE;i++){
+//        cout << i+1 << " : ";
+//        getline(cin,list[i]);
+//    }
+//    mSevenContentCode->display(list,SIZE);
+//    array<string,4> Snames = {"Spring","Summer","Fall","Winter"};
+//    mSevenContentCode->fill(&Snames);
+    mSevenContentCode->count_down(8);
     return 0;
 }
+
 
