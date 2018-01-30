@@ -11,6 +11,7 @@
 #include "ChapterSix/chaptersixcontentcode.h"
 #include "ChapterSix/chaptersixexercises.h"
 #include "ChapterSeven/chaptersevencontentcode.h"
+#include "ChapterSeven/testpointer.h"
 
 
 using namespace std;
@@ -141,7 +142,18 @@ int main()
 //    mSevenContentCode->display(list,SIZE);
 //    array<string,4> Snames = {"Spring","Summer","Fall","Winter"};
 //    mSevenContentCode->fill(&Snames);
-    mSevenContentCode->count_down(8);
+//    mSevenContentCode->count_down(8);
+//    mSevenContentCode->ruler();
+
+//    mSevenContentCode->testPointer(pam);
+//    mSevenContentCode->estimate(20,pam);
+//    mSevenContentCode->estimate(35,betsy);
+//    mSevenContentCode->testArfupt();
+    int mk[] = {0,0,0,0};
+    muhaitian_(mk,mk+4,8);
+    for(int i=0;i<4;i++){
+        cout << mk[i] << endl;
+    }
     return 0;
 }
 

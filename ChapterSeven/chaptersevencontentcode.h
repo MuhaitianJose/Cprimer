@@ -2,6 +2,7 @@
 #define CHAPTERSEVENCONTENTCODE_H
 #include <iostream>
 #include <array>
+#include "testpointer.h"
 using namespace std;
 struct travel_time{
     int hours;
@@ -39,6 +40,11 @@ public:
 
     void fill(array<string, SEASON_SIZE> *pa);
     void count_down(int n);
+    void ruler();
+    void subdivide(char arr[], int min, int max, int level);
+    void testPointer(double (*pf)(int));
+    void estimate(int lines, double (*pf)(int));
+    void testArfupt();
 };
 
 #endif // CHAPTERSEVENCONTENTCODE_H

@@ -80,6 +80,14 @@ void ChapterSevenContentCode::const_and_pointer(){
     double trouble = 2.0E30;
     const double* const stick = &trouble;
 
+    //    第一个mk是个数组名，里面保存的是int指针。
+    //    第二个a是个指针名，它指向一个包含5个数据的int数组。
+
+    int a=1,b=2,c=3;
+
+    int* mk[3] = {&a,&b,&c};//指针数组
+    //    int (*mu)[3] = &{a,b,c}; //数组指针
+
 }
 
 void ChapterSevenContentCode:: array_2d(){
@@ -149,5 +157,84 @@ void ChapterSevenContentCode::count_down(int n){
 
     cout << n << ": Kaboom!" << endl;
 }
+
+void ChapterSevenContentCode::ruler(){
+    const int Len = 66;
+    const int Divs = 6;
+    char ruler[Len];
+    for(int i=1;i<Len-2;i++){
+        ruler[i]=' ';
+    }
+    int max = Len-2;
+    int min = 0;
+    ruler[Len-1]='\0';
+    ruler[min]=ruler[max]= '|';
+    cout << ruler << endl;
+    for(int i=1;i<=Divs;i++){
+        subdivide(ruler,min,max,i);
+        cout << ruler << endl;
+    }
+}
+void ChapterSevenContentCode:: subdivide(char arr[],int min,int max,int level){
+    if(1==level){
+        return;
+    }
+    int mid = (min+max)/2;
+    arr[mid] = '|';
+    subdivide(arr,min,mid,level-1);
+    subdivide(arr,mid,max,level-1);
+
+}
+void ChapterSevenContentCode::testPointer(double (*pf)(int)){
+    pf(56);
+}
+
+void ChapterSevenContentCode::estimate(int lines,double (*pf)(int)){
+    cout << lines << " lines will take ";
+    cout << pf(lines) << " hour(s)" << endl;
+}
+
+void ChapterSevenContentCode::testArfupt(){
+    double av[3] = {1112.3,1542.6,2227.9};
+    //单个指针函数返回double变量的指针
+    const double* (*p1)(const double*,int) = f1;
+    auto p2 = f2;
+    cout << "Using pointers to function:" << endl;
+    cout << " Address   Value" << endl;
+    cout << (*p1)(av,3) << " : " << *(*p1)(av,3) << endl;
+    cout << p1(av,3) << " : " << *p1(av,3) << endl;
+    cout << p2(av,3) << " : " << *p2(av,3) << endl;
+    //使用指针数组
+    const double* (*pa[3]) (const double*,int) = {f1,f2,f3};
+     const double* (*(*pd)[3])(const double *,int) = &pa;
+    auto pb = pa;
+    cout << endl << "Using an array of pointers to functions:" << endl;
+    for(int i=0;i< 3;i++){
+        cout << pa[i](av,3) << " : " << *pa[i](av,3) << endl;
+    }
+    cout << "Using a pointer to a pointer to a function:" << endl;
+    cout << "Address    Value" << endl;
+
+    for(int i=0;i<3;i++){
+        cout << endl << pb[i](av,3) << " : " << *pb[i](av,3) << endl;
+    }
+
+    cout << endl
+         << "Using pointer to an array of function pointera"
+         << endl;
+    cout << "Address   Value" << endl;
+    //但&pa是整个数组(即三个指针块)的地址。必须使用*进行引用解除
+    auto pc = &pa;
+    cout << (*pc)[0](av,3) << " : " << *(*pc)[0](av,3) << endl;
+
+    //    cout << (pc)[0](av,3)
+    //    << " : "
+    //    << *(pc)[0](av,3) << endl;这样使用是错误的
+   const double* pdb = (*pd)[1](av,3);
+   cout << pdb << " : " << *pdb << endl;
+   cout << (*(*pd)[2])(av,3) << " : " << *(*(*pd)[2])(av,3) << endl;
+}
+
+
 
 

@@ -13,7 +13,8 @@ SOURCES += main.cpp \
     ChapterFive/chapterfiveexercises.cpp \
     ChapterSix/chaptersixcontentcode.cpp \
     ChapterSix/chaptersixexercises.cpp \
-    ChapterSeven/chaptersevencontentcode.cpp
+    ChapterSeven/chaptersevencontentcode.cpp \
+    ChapterSeven/testpointer.cpp
 
 HEADERS += \
     ChapterTwo/firstsource.h \
@@ -25,7 +26,8 @@ HEADERS += \
     ChapterFive/chapterfiveexercises.h \
     ChapterSix/chaptersixcontentcode.h \
     ChapterSix/chaptersixexercises.h \
-    ChapterSeven/chaptersevencontentcode.h
+    ChapterSeven/chaptersevencontentcode.h \
+    ChapterSeven/testpointer.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \
