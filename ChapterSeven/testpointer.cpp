@@ -47,12 +47,3 @@ double findMaxValue(const double arr[],int size){
     return max;
 }
 
-void show(application app){
-    cout << "name: " << app.name << endl;
-    cout << "credit_ratings: " << app.credit_ratings << endl;
-}
-
-void show(application* app){
-    cout << "name: " << app->name << endl;
-    cout << "credit_ratings: " << app->credit_ratings << endl;
-}

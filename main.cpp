@@ -12,6 +12,7 @@
 #include "ChapterSix/chaptersixexercises.h"
 #include "ChapterSeven/chaptersevencontentcode.h"
 #include "ChapterSeven/testpointer.h"
+#include "ChapterSeven/chaptersevenexercises.h"
 
 
 using namespace std;
@@ -110,50 +111,53 @@ int main()
     //    mSixExercises->exercisesSeven();
     //    mSixExercises->exercisesEighth();
     //第七章
-//    const int Asize = 8;
-//    int cookies[Asize] = {1,2,4,8,16,32,64,128};
-    ChapterSevenContentCode* mSevenContentCode = new ChapterSevenContentCode();
+    //    const int Asize = 8;
+    //    int cookies[Asize] = {1,2,4,8,16,32,64,128};
+//    ChapterSevenContentCode* mSevenContentCode = new ChapterSevenContentCode();
     //    int total = mSevenContentCode->sum_arr(cookies,Asize);
     //    cout << "Total cookies eaten: "<< total << endl;
     //    mSevenContentCode->show_array(cookies,Asize);
     //    cout << "sum_arr_by_pointer: "<<mSevenContentCode->sum_arr_by_pointer(cookies,cookies+Asize);
     //    mSevenContentCode->array_2d();
-//    char mmm[15] = "minimum";
-//    char* wail = "ululate";
-//    unsigned int ms = mSevenContentCode->c_in_str(mmm,'m');
-//    unsigned int us = mSevenContentCode->c_in_str(wail,'u');
-//    cout << "ms=" << ms << " "<< "us=" <<us;
+    //    char mmm[15] = "minimum";
+    //    char* wail = "ululate";
+    //    unsigned int ms = mSevenContentCode->c_in_str(mmm,'m');
+    //    unsigned int us = mSevenContentCode->c_in_str(wail,'u');
+    //    cout << "ms=" << ms << " "<< "us=" <<us;
 
-//    char* mk = mSevenContentCode->buildstr('M',50);
-//    cout << mk;
-//    delete[] mk;
+    //    char* mk = mSevenContentCode->buildstr('M',50);
+    //    cout << mk;
+    //    delete[] mk;
 
-//    travel_time day1 = {5,45};
-//    travel_time day2 = {4,55};
-//    travel_time trip = mSevenContentCode->travel_time_sum(day1,day2);
-//    mSevenContentCode->show_time(trip);
-//    const int SIZE = 5;
-//    string list[SIZE];
-//    cout << "Enter your "<< SIZE << "favorite astronomical:" << endl;
-//    for(int i=0;i<SIZE;i++){
-//        cout << i+1 << " : ";
-//        getline(cin,list[i]);
-//    }
-//    mSevenContentCode->display(list,SIZE);
-//    array<string,4> Snames = {"Spring","Summer","Fall","Winter"};
-//    mSevenContentCode->fill(&Snames);
-//    mSevenContentCode->count_down(8);
-//    mSevenContentCode->ruler();
+    //    travel_time day1 = {5,45};
+    //    travel_time day2 = {4,55};
+    //    travel_time trip = mSevenContentCode->travel_time_sum(day1,day2);
+    //    mSevenContentCode->show_time(trip);
+    //    const int SIZE = 5;
+    //    string list[SIZE];
+    //    cout << "Enter your "<< SIZE << "favorite astronomical:" << endl;
+    //    for(int i=0;i<SIZE;i++){
+    //        cout << i+1 << " : ";
+    //        getline(cin,list[i]);
+    //    }
+    //    mSevenContentCode->display(list,SIZE);
+    //    array<string,4> Snames = {"Spring","Summer","Fall","Winter"};
+    //    mSevenContentCode->fill(&Snames);
+    //    mSevenContentCode->count_down(8);
+    //    mSevenContentCode->ruler();
 
-//    mSevenContentCode->testPointer(pam);
-//    mSevenContentCode->estimate(20,pam);
-//    mSevenContentCode->estimate(35,betsy);
-//    mSevenContentCode->testArfupt();
-    int mk[] = {0,0,0,0};
-    muhaitian_(mk,mk+4,8);
-    for(int i=0;i<4;i++){
-        cout << mk[i] << endl;
-    }
+    //    mSevenContentCode->testPointer(pam);
+    //    mSevenContentCode->estimate(20,pam);
+    //    mSevenContentCode->estimate(35,betsy);
+    //    mSevenContentCode->testArfupt();
+    //第七章练习题
+    ChapterSevenExercises* mSevenExercises = new ChapterSevenExercises();
+//    mSevenExercises->exercisesOne();
+//    mSevenExercises->exercisesTwo();
+//    mSevenExercises->exercisesThree();
+//    mSevenExercises->exercisesFive();
+    mSevenExercises->exercisesSix();
+
     return 0;
 }
 
