@@ -16,7 +16,9 @@ SOURCES += main.cpp \
     ChapterSeven/chaptersevencontentcode.cpp \
     ChapterSeven/testpointer.cpp \
     ChapterSeven/chaptersevenexercises.cpp \
-    ChapterSeven/chapterseven.cpp
+    ChapterSeven/chapterseven.cpp \
+    ChapterEight/chaptereightcontentcode.cpp \
+    form.cpp
 
 HEADERS += \
     ChapterTwo/firstsource.h \
@@ -31,9 +33,14 @@ HEADERS += \
     ChapterSeven/chaptersevencontentcode.h \
     ChapterSeven/testpointer.h \
     ChapterSeven/chaptersevenexercises.h \
-    ChapterSeven/chapterseven.h
+    ChapterSeven/chapterseven.h \
+    ChapterEight/chaptereightcontentcode.h \
+    form.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \
     ChapterFour/Record.txt \
     ChapterSix/eight.txt
+
+FORMS += \
+    form.ui

@@ -85,18 +85,99 @@ void ChapterSevenExercises::exercisesSix(){
 }
 
 void ChapterSevenExercises::exercisesSeven(){
-
+    int properties[10];
+    int* pbegin = properties;
+    int* pend = fillArray(properties,properties+10);
+    showArray(pbegin,pend);
+    cout<<pbegin << endl;
+    cout << pend << endl;
+    if(pend-pbegin > 0){
+        revalue(3,pbegin,pend);
+        showArray(pbegin,pend);
+    }
 }
 
-void ChapterSevenExercises::exercisesEight(){
-
+void ChapterSevenExercises::exercisesEightA(){
+    double arr[10];
+    fill_by_array(arr,10);
+    show_by_array(arr,10);
 }
+void ChapterSevenExercises::exercisesEightB(){
+    data mData = fill_by_data();
+    show(mData);
+}
+
 
 void ChapterSevenExercises::exercisesNine(){
+    cout << "Enter class size: ";
+    int class_size = 0;
+    cin >> class_size;
+    while (cin.get()!='\n') {
+        continue;
+    }
+
+    student *ptr_stu = new student[class_size];
+    int entered = getinfo(ptr_stu,class_size);
+    for(int i=0;i<entered;i++){
+        display1(ptr_stu[i]);
+        display2(&ptr_stu[i]);
+    }
+    display3(ptr_stu,entered);
+    delete[] ptr_stu;
+    cout << "Done" << endl;
 
 }
 
 void ChapterSevenExercises::exercisesTen(){
+    double a,b;
+    double (*pf[3]) = {add,sub,mean};
+    char* op[3] = {"add","sub","mean"};
+    while (cin >> a >> b) {
+        for(int i=0;i<3;i++){
+            cout << op[i] << ": " << a << " and " << b
+                 << " = " << calculate(a,b,pf[i]) << endl;
+        }
+    }
+}
 
+void ChapterSevenExercises::show_by_array(double arr[],int size){
+    cout << endl << "EXPENSES" << endl;
+    double total = 0.0;
+    for(int i=0;i<size;i++){
+        cout << SNAMES[i] << ": $" << arr[i] << endl;
+        total+=arr[i];
+    }
+    cout << "Total Expenses: $" << total << endl;
+}
+void ChapterSevenExercises::fill_by_array(double arr[],int size){
+    double temp=0;
+    for(int i=0;i<size;i++){
+        cout << "Enter arr[" << i+1 << "]: " ;
+        cin >> temp;
+        //        if(!cin){
+        //            cin.clear();
+        //            while (cin.get()!='\n') {
+        //                continue;
+        //            }
+        //        }
+        arr[i] = temp;
+    }
+}
+data ChapterSevenExercises::fill_by_data(){
+    data expenses;
+    for(int i=0;i<SEASON;i++){
+        cout << "Enter arr[" << i+1 << "]: " ;
+        cin >>expenses.arr[i];
+    }
+    return expenses;
+}
+void ChapterSevenExercises::show(data mData){
+    cout << endl << "EXPENSES" << endl;
+    double total = 0.0;
+    for(int i=0;i<SEASON;i++){
+        cout << SNAMES[i] << ": $" << mData.arr[i] << endl;
+        total+=mData.arr[i];
+    }
+    cout << "Total Expenses: $ " << total << endl;
 }
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cctype>
 #include <array>
+#include <cstring>
 #include "ChapterTwo/firstsource.h"
 #include "ChapterThree/chapterthreecpp.h"
 #include "ChapterThree/chapterthreeexercises.h"
@@ -156,7 +157,16 @@ int main()
 //    mSevenExercises->exercisesTwo();
 //    mSevenExercises->exercisesThree();
 //    mSevenExercises->exercisesFive();
-    mSevenExercises->exercisesSix();
+//    mSevenExercises->exercisesSix();
+//    mSevenExercises->exercisesSeven();
+//    int a=1,b=2,c=3;
+//    int sum[3] = {a,b,c};
+//    int* mk[3] = {&a,&b,&c};//指针数组
+//    int (*mu)[3] = &sum;
+//    const char* Snames[] = {"Spring","Summer","Fall","Winner"};
+//    cout << *mk[1] << endl;
+//    cout << *Snames[1]<< endl;
+//    cout << Snames[1] << endl;
 
     return 0;
 }
