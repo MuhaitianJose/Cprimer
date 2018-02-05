@@ -14,6 +14,7 @@
 #include "ChapterSeven/chaptersevencontentcode.h"
 #include "ChapterSeven/testpointer.h"
 #include "ChapterSeven/chaptersevenexercises.h"
+#include "ChapterEight/chaptereightcontentcode.h"
 
 
 using namespace std;
@@ -152,7 +153,7 @@ int main()
     //    mSevenContentCode->estimate(35,betsy);
     //    mSevenContentCode->testArfupt();
     //第七章练习题
-    ChapterSevenExercises* mSevenExercises = new ChapterSevenExercises();
+//    ChapterSevenExercises* mSevenExercises = new ChapterSevenExercises();
 //    mSevenExercises->exercisesOne();
 //    mSevenExercises->exercisesTwo();
 //    mSevenExercises->exercisesThree();
@@ -167,6 +168,10 @@ int main()
 //    cout << *mk[1] << endl;
 //    cout << *Snames[1]<< endl;
 //    cout << Snames[1] << endl;
+    //第八章
+    ChapterEightContentCode* mEightContentCode = new ChapterEightContentCode();
+//    mEightContentCode->testInlineFunction();
+    mEightContentCode->firstRef();
 
     return 0;
 }

@@ -18,7 +18,8 @@ SOURCES += main.cpp \
     ChapterSeven/chaptersevenexercises.cpp \
     ChapterSeven/chapterseven.cpp \
     ChapterEight/chaptereightcontentcode.cpp \
-    form.cpp
+    ChapterEight/chaptereightcommon.cpp
+
 
 HEADERS += \
     ChapterTwo/firstsource.h \
@@ -35,12 +36,11 @@ HEADERS += \
     ChapterSeven/chaptersevenexercises.h \
     ChapterSeven/chapterseven.h \
     ChapterEight/chaptereightcontentcode.h \
-    form.h
+    form.h \
+    ChapterEight/chaptereightcommon.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \
     ChapterFour/Record.txt \
     ChapterSix/eight.txt
 
-FORMS += \
-    form.ui

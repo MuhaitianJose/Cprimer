@@ -130,7 +130,7 @@ void ChapterSevenExercises::exercisesNine(){
 
 void ChapterSevenExercises::exercisesTen(){
     double a,b;
-    double (*pf[3]) = {add,sub,mean};
+    double (*pf[3])(double,double) = {add,sub,mean};
     char* op[3] = {"add","sub","mean"};
     while (cin >> a >> b) {
         for(int i=0;i<3;i++){
