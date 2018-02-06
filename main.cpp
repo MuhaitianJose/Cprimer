@@ -171,7 +171,10 @@ int main()
     //第八章
     ChapterEightContentCode* mEightContentCode = new ChapterEightContentCode();
 //    mEightContentCode->testInlineFunction();
-    mEightContentCode->firstRef();
+//    mEightContentCode->firstRef();
+//    mEightContentCode->swaps();
+//    mEightContentCode->strtRef();
+    mEightContentCode->funtemp();
 
     return 0;
 }

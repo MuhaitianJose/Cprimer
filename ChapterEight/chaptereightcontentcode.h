@@ -14,6 +14,8 @@ public:
     void testInlineFunction();
     void firstRef();
     void swaps();
+    void strtRef();
+    void funtemp();
 };
 
 #endif // CHAPTEREIGHTCONTENTCODE_H
