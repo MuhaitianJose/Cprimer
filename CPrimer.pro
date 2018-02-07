@@ -19,8 +19,9 @@ SOURCES += main.cpp \
     ChapterSeven/chapterseven.cpp \
     ChapterEight/chaptereightcontentcode.cpp \
     ChapterEight/chaptereightcommon.cpp \
-    chaptereightexercises.cpp \
-    ChapterEight/eightexercises.cpp
+    ChapterEight/eightexercises.cpp \
+    ChapterEight/chaptereightexercises.cpp \
+    ChapterNine/coordin.cpp
 
 
 HEADERS += \
@@ -40,8 +41,9 @@ HEADERS += \
     ChapterEight/chaptereightcontentcode.h \
     form.h \
     ChapterEight/chaptereightcommon.h \
-    chaptereightexercises.h \
-    ChapterEight/eightexercises.h
+    ChapterEight/eightexercises.h \
+    ChapterEight/chaptereightexercises.h \
+    ChapterNine/coordin.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \

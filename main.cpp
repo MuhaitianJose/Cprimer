@@ -15,6 +15,7 @@
 #include "ChapterSeven/testpointer.h"
 #include "ChapterSeven/chaptersevenexercises.h"
 #include "ChapterEight/chaptereightcontentcode.h"
+#include "ChapterEight/chaptereightexercises.h"
 
 
 using namespace std;
@@ -115,7 +116,7 @@ int main()
     //第七章
     //    const int Asize = 8;
     //    int cookies[Asize] = {1,2,4,8,16,32,64,128};
-//    ChapterSevenContentCode* mSevenContentCode = new ChapterSevenContentCode();
+    //    ChapterSevenContentCode* mSevenContentCode = new ChapterSevenContentCode();
     //    int total = mSevenContentCode->sum_arr(cookies,Asize);
     //    cout << "Total cookies eaten: "<< total << endl;
     //    mSevenContentCode->show_array(cookies,Asize);
@@ -153,28 +154,36 @@ int main()
     //    mSevenContentCode->estimate(35,betsy);
     //    mSevenContentCode->testArfupt();
     //第七章练习题
-//    ChapterSevenExercises* mSevenExercises = new ChapterSevenExercises();
-//    mSevenExercises->exercisesOne();
-//    mSevenExercises->exercisesTwo();
-//    mSevenExercises->exercisesThree();
-//    mSevenExercises->exercisesFive();
-//    mSevenExercises->exercisesSix();
-//    mSevenExercises->exercisesSeven();
-//    int a=1,b=2,c=3;
-//    int sum[3] = {a,b,c};
-//    int* mk[3] = {&a,&b,&c};//指针数组
-//    int (*mu)[3] = &sum;
-//    const char* Snames[] = {"Spring","Summer","Fall","Winner"};
-//    cout << *mk[1] << endl;
-//    cout << *Snames[1]<< endl;
-//    cout << Snames[1] << endl;
+    //    ChapterSevenExercises* mSevenExercises = new ChapterSevenExercises();
+    //    mSevenExercises->exercisesOne();
+    //    mSevenExercises->exercisesTwo();
+    //    mSevenExercises->exercisesThree();
+    //    mSevenExercises->exercisesFive();
+    //    mSevenExercises->exercisesSix();
+    //    mSevenExercises->exercisesSeven();
+    //    int a=1,b=2,c=3;
+    //    int sum[3] = {a,b,c};
+    //    int* mk[3] = {&a,&b,&c};//指针数组
+    //    int (*mu)[3] = &sum;
+    //    const char* Snames[] = {"Spring","Summer","Fall","Winner"};
+    //    cout << *mk[1] << endl;
+    //    cout << *Snames[1]<< endl;
+    //    cout << Snames[1] << endl;
     //第八章
-    ChapterEightContentCode* mEightContentCode = new ChapterEightContentCode();
-//    mEightContentCode->testInlineFunction();
-//    mEightContentCode->firstRef();
-//    mEightContentCode->swaps();
-//    mEightContentCode->strtRef();
-    mEightContentCode->funtemp();
+    //    ChapterEightContentCode* mEightContentCode = new ChapterEightContentCode();
+    //    mEightContentCode->testInlineFunction();
+    //    mEightContentCode->firstRef();
+    //    mEightContentCode->swaps();
+    //    mEightContentCode->strtRef();
+    //    mEightContentCode->funtemp();
+    ChapterEightExercises* mEightExercises = new ChapterEightExercises();
+    //    mEightExercises->exercisesOne();
+    //    mEightExercises->exercisesTwo();
+    //    mEightExercises->exercisesThree();
+    //    mEightExercises->exercisesFour();
+//    mEightExercises->exercisesFive();
+//    mEightExercises->exercisesSix();
+    mEightExercises->exercisesSeven();
 
     return 0;
 }
