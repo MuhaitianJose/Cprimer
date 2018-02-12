@@ -16,15 +16,18 @@
 #include "ChapterSeven/chaptersevenexercises.h"
 #include "ChapterEight/chaptereightcontentcode.h"
 #include "ChapterEight/chaptereightexercises.h"
+#include "ChapterNine/coordin.h"
 
 
 using namespace std;
+
 
 
 /**
  * @brief main 是程序跟操作系统之间的接口
  * @return
  */
+void showMu();
 int main()
 {
     //第二章
@@ -176,15 +179,18 @@ int main()
     //    mEightContentCode->swaps();
     //    mEightContentCode->strtRef();
     //    mEightContentCode->funtemp();
-    ChapterEightExercises* mEightExercises = new ChapterEightExercises();
+    //    ChapterEightExercises* mEightExercises = new ChapterEightExercises();
     //    mEightExercises->exercisesOne();
     //    mEightExercises->exercisesTwo();
     //    mEightExercises->exercisesThree();
     //    mEightExercises->exercisesFour();
-//    mEightExercises->exercisesFive();
-//    mEightExercises->exercisesSix();
-    mEightExercises->exercisesSeven();
-
+    //    mEightExercises->exercisesFive();
+    //    mEightExercises->exercisesSix();
+    //    mEightExercises->exercisesSeven();
+    //第九章
+//    ChapterNineContentCode* mNineContentCode = new ChapterNineContentCode();
+//    mNineContentCode->code_one();
+    showMu();
     return 0;
 }
 

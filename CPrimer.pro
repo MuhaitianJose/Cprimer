@@ -21,7 +21,9 @@ SOURCES += main.cpp \
     ChapterEight/chaptereightcommon.cpp \
     ChapterEight/eightexercises.cpp \
     ChapterEight/chaptereightexercises.cpp \
-    ChapterNine/coordin.cpp
+    ChapterNine/coordin.cpp \
+    ChapterNine/chapterninecontentcode.cpp \
+    ChapterNine/muhaitian.cpp
 
 
 HEADERS += \
@@ -43,7 +45,8 @@ HEADERS += \
     ChapterEight/chaptereightcommon.h \
     ChapterEight/eightexercises.h \
     ChapterEight/chaptereightexercises.h \
-    ChapterNine/coordin.h
+    ChapterNine/coordin.h \
+    ChapterNine/chapterninecontentcode.h
 
 DISTFILES += \
     ChapterThree/Recode.txt \
